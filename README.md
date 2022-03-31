@@ -1,4 +1,4 @@
-# 💻 Daily JavsScript Challenges
+# 💻 Daily JavaScript Challenges
 
 Welcome to my daily coding challenge repo. 
 
