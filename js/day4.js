@@ -1,10 +1,10 @@
-/** 
-* //* 8kyu Parse nice int from char problem
-* You ask a small girl,"How old are you?" She always says, "x years old", where x is a random number between 0 and 9.
-* TODO: Write a program that returns the girl's age (0-9) as an integer.
-* Assume the test input string is always a valid string. For example, the test input may be "1 year old" or "5 * * years old". The first character in the string is always a number.
+/**
+ * * 8 kyu - Will you make it?
+You were camping with your friends far away from home, but when it's time to go back, you realize that your fuel is running out and the nearest pump is 50 miles away! You know that on average, your car runs on about 25 miles per gallon. There are 2 gallons left. Considering these factors, write a function that tells you if it is possible to get to the pump or not. Function should return true (1 in Prolog, NASM and COBOL) if it is possible and false (0 in Prolog, NASM and COBOL) if not. The input values are always positive.
 */
 
-function getAge(inputString){
-    // return the girl's correct age as an integer. Happy coding :) 
-    }
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    // TODO
+    let equationResult = distanceToPump - (mpg * fuelLeft);
+    return equationResult <= 0 ? true : false;
+  };
