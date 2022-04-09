@@ -14,5 +14,17 @@ The size will always be positive and will only use whole numbers.
 */
 
 function stringy(size) {
-  // your code here   
+  // your code here
+  let str = "";
+
+  for (let i = 1; i <= size; i++) {
+    if (i % 2 === 0) {
+      str += "0";
+    } else {
+      str += "1";
+    }
+  }
+  console.log(str);
 }
+
+stringy(8);
