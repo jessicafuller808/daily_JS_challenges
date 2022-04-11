@@ -4,41 +4,41 @@ TODO: Make multiple functions that will return the sum, difference, modulus, pro
 
 *Please use the following function names:
 
-*addition = add
+// *addition = add
 
-*multiply = multiply
+// *multiply = multiply
 
-*division = divide (both integer and float divisions are accepted)
+// *division = divide (both integer and float divisions are accepted)
 
-*modulus = mod
+// *modulus = mod
 
-*exponential = exponent
+// *exponential = exponent
 
-*subtraction = subt
+// *subtraction = subt
 
-*Note: All math operations will be: a (operation) b
+Note: All math operations will be: a (operation) b
 */
 
 function add(a,b){
-    return 
+    return a + b;
 }
 
 function divide(a,b){
-    return 
+    return a / b;
 }
 
 function multiply(a,b){
-    return 
+    return a * b;
 }
 
 function mod(a,b){
-    return 
+    return a % b;
 }
    
 function exponent(a,b){
-    return 
+    return a ** b;
 }
     
 function subt(a,b){
-    return 
+    return a - b;
 }
