@@ -11,11 +11,11 @@ function getCount(str) {
     let vowels = ["a", "e", "i", "o", "u"];
     
     for (var i = 0; i < str.length; i++) {
-        vowels.forEach(element => {
+        for (const element of vowels) {
             str.charAt(i) === element ? vowelsCount++ : vowelsCount = vowelsCount;
-        });
+        };
       }
-    return(vowelsCount);
+    console.log(vowelsCount);
   } 
 
   getCount("refrejadadora");
