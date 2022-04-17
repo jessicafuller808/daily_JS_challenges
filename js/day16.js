@@ -8,8 +8,14 @@ TODO: Return the number (count) of vowels in the given string.
 
 function getCount(str) {
     var vowelsCount = 0;
+    let vowels = ["a", "e", "i", "o", "u"];
     
-    // enter your majic here
-    
-    return vowelsCount;
-  }
+    for (var i = 0; i < str.length; i++) {
+        vowels.forEach(element => {
+            str.charAt(i) === element ? vowelsCount++ : vowelsCount = vowelsCount;
+        });
+      }
+    return(vowelsCount);
+  } 
+
+  getCount("refrejadadora");
