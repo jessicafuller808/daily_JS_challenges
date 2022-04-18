@@ -18,16 +18,17 @@ let alphaArr = Object.entries(alphabet);
 // filters the alphabet array and establishes sub arrays of the key value pairs converted to strings.
 const filtered = alphaArr.filter(([key, value]) => typeof value === 'string');
 
-// setups a new string to house alphabet keys as strings
-let newStr = "";
+
 
 // Accepts a string as a parameter
 function alphaPos(str) {
     // Creates new string to transform str param into all lower case
     let lowerStr = str.toLowerCase();
+    // setups a new string to house alphabet keys as strings
+    let newStr = "";
     // iterates through the string's characters
     for (i = 0; i < lowerStr.length; i++) {
-        //for each string character, check if it's included in the alphabet array. If found, return the string at the 0 index (houses our alphabet obj keys).
+        //for each string character, check if it's included in the alphabet array. If found, return the string at the 0 index (houses our alphabet obj).
         alphaArr.forEach(element => {
             if (element.includes(lowerStr[i])) {
                 newStr += (element[0] + " ");
