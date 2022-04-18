@@ -15,16 +15,26 @@ let alphabet = {1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e', 6: 'f', 7: 'g', 8: 'h', 
 //converts the alphabet object into an array
 let alphaArr = Object.entries(alphabet);
 
-// filters the alphabet array and establishes sub arrays of key value pairs converted to strings.
+// filters the alphabet array and establishes sub arrays of the key value pairs converted to strings.
 const filtered = alphaArr.filter(([key, value]) => typeof value === 'string');
 
-console.log(alphaArr);
+// setups a new string to house alphabet keys as strings
+let newStr = "";
 
+// Accepts a string as a parameter
 function alphaPos(str) {
-    for (i = 0; i < str.length; i++) {
-        str[i].toLowerCase();
-        //for each character compare it to a value in the alphabet object. When the value is found, return the key.
+    // Creates new string to transform str param into all lower case
+    let lowerStr = str.toLowerCase();
+    // iterates through the string's characters
+    for (i = 0; i < lowerStr.length; i++) {
+        //for each string character, check if it's included in the alphabet array. If found, return the string at the 0 index (houses our alphabet obj keys).
+        alphaArr.forEach(element => {
+            if (element.includes(lowerStr[i])) {
+                newStr += (element[0] + " ");
+                console.log(newStr);
+            }
+        });
     }
 }
 
-//alphaPos("Let's see if this will work out");
+alphaPos("Let's see if this will work out");
