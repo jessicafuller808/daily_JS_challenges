@@ -18,12 +18,13 @@ let alphaArr = Object.entries(alphabet);
 // filters the alphabet array and establishes sub arrays of key value pairs converted to strings.
 const filtered = alphaArr.filter(([key, value]) => typeof value === 'string');
 
+console.log(alphaArr);
+
 function alphaPos(str) {
     for (i = 0; i < str.length; i++) {
         str[i].toLowerCase();
         //for each character compare it to a value in the alphabet object. When the value is found, return the key.
     }
-
 }
 
-alphaPos("Let's see if this will work out");
+//alphaPos("Let's see if this will work out");
