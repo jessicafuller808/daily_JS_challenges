@@ -32,10 +32,10 @@ function alphaPos(str) {
         alphaArr.forEach(element => {
             if (element.includes(lowerStr[i])) {
                 newStr += (element[0] + " ");
-                console.log(newStr);
             }
         });
     }
+    console.log(newStr);
 }
 
-alphaPos("Let's see if this will work out");
+alphaPos("The sunset sets at twelve o' clock.");
