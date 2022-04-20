@@ -8,5 +8,7 @@ TODO: Considering these factors, write a function that tells you if it is possib
 */
 
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
-    // TODO
+    let makeIt = (fuelLeft * mpg) - distanceToPump;
+    return makeIt >= 0 ? true : false;
   };
+
