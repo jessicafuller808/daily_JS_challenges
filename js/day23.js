@@ -13,3 +13,16 @@ Notes
 * There will always be at least one number in the input string.
 * Output string must be two numbers separated by a single space, and highest number is first.
 */
+
+function highAndLow(numbers){
+  let arr = [];
+  let strToNum = (numbers.split(' ').filter(e => e.trim().length));
+
+  strToNum.forEach(element => {
+    arr.push(Number(element));
+  });
+
+  return `${Math.max(...arr)} ${Math.min(...arr)}`;
+}
+
+highAndLow("1 2 3 4 5"); 
