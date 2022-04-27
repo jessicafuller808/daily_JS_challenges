@@ -5,8 +5,11 @@ Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
 i.e.
 friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
 Note: keep the original order of the names in the output.
+
+The filter() method creates a new array with all elements that pass the test implemented by the provided function.
 */
 
 function friend(friends){
-    //your code here
+    let realFriend = friends.filter( name => name.length === 4);
+    return realFriend;
   }
