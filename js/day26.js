@@ -10,5 +10,21 @@
   For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
 
   Note: for this kata y isn't considered a vowel.
-
  */
+
+  function disemvowel(str) {
+    let lowerVowels = ["a", "e", "i", "o", "u"];
+    let upperVowels = ["A", "E", "I", "O", "U"]
+    let newStr = "";
+    for (let i = 0; i < str.length; i++) {
+      let char = str.charAt(i);
+      if ((lowerVowels.includes(char)) || (upperVowels.includes(char))) {
+        str.slice(char);
+      } else {
+        newStr += char;
+      }
+    }
+    return newStr;
+  }
+
+  console.log(disemvowel('This website is for losers LOL!'));
