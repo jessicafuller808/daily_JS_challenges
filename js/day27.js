@@ -7,10 +7,10 @@
  filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
  */
 
- function filter_list(l) {
+  function filter_list(l) {
   // Return a new array with the strings filtered out
   const newList = l.filter(e => typeof e === "number");
-  console.log(newList);
+  return newList;
 }
 
 filter_list([1,2,'a','b']);
