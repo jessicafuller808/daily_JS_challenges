@@ -6,7 +6,8 @@
 /* Responsive font */
 html {
     font-size: 62.5%;
-  }
+    background-color: black;
+}
 
 /* Clear fix hack */
 .clearfix:after {
@@ -19,7 +20,7 @@ html {
 }
 
 .clear {
-   clear: both;
+    clear: both;
 }
 
 /******************************************
@@ -31,13 +32,9 @@ html {
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
+header {}
 
-}
-
-footer {
-
-}
+footer {}
 
 /******************************************
 /* ADDITIONAL STYLES
