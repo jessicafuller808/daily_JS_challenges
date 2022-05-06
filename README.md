@@ -11,5 +11,5 @@ I do daily challenges for a few reasons:
 
 ## :notebook: Some Notes
 
-At the moment all the challenges here are from [Codewars](https://codewars.com) katas.
+At the moment all the challenges here are from [Codewars](https://codewars.com).
 
