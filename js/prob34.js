@@ -10,5 +10,3 @@
         return 'false';
     }
   }
-
-  console.log(booleanToString(`${2*2}`));
