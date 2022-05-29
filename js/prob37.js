@@ -1,18 +1,17 @@
 /**
- * 8kyu - Convert Number to Reversed Array of Digits
- * TODO: Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
- * Example:
-    348597 => [7,9,5,8,4,3]
-    0 => [0]
+ * *8kyu - Get the Mean of an Array
+ * It's the academic year's end, fateful moment of your school report. 
+ * The averages must be calculated. All the students come to you and entreat you to calculate their average for them.
+ * You just need to write a script.
+ * TODO: Return the average of the given array rounded down to its nearest integer.
+ * The array will never be empty.
  */
 
-    function digitize(n) {
-        //code here
-        let arr = [];
-        for(let i = 0; i < n.length; i++) {
-            arr.push(n[i]);
-        }
-        console.log(arr);
-      }
+ function getAverage(marks){
+    //TODO : calculate the downward rounded average of the marks array
+    let sum = 0;
+    marks.map(x => sum += x);
+    return Math.floor(sum / marks.length);
+  }
 
-    console.log(digitize(1234567));
+  console.log(getAverage([1,2,3,4,5,]));
