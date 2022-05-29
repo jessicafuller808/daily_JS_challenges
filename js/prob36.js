@@ -19,7 +19,6 @@
     } else {
         return 'Obese';
     }
-
   }
 
   console.log(bmi(80, 1.80));
