@@ -5,8 +5,13 @@
  */
 
  function hero(bullets, dragons){
-  //Get Coding!
+  if (dragons * 2 <= bullets) {
+    return true;
+  } else {
+    return false;
+  }
   }
   
 
   console.log(hero(10, 5));
+  console.log(hero(4, 5));
