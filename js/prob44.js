@@ -5,7 +5,9 @@
  */
 
  function remainder(n, m){
-    // Divide the larger argument by the smaller argument and return the remainder
+    let denom = Math.max(n, m);
+    let num = Math.min(n, m);
+    return denom % num;
     
   }
 
