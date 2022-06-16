@@ -1,28 +1,28 @@
 /**
- * *8kyu - Sum of positive
- * TODO: You get an array of numbers, return the sum of all of the positives ones.
- * *Note: if there is nothing to sum, the sum is default to 0.
+ * 8kyu - Count of positives / sum of negatives
+ * Given an array of integers.
+ * TODO: Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 
+ * 0 is neither positive nor negative.
+ * If the input is an empty array or is null, return an empty array.
+ * 
  */
 
- function positiveSum(arr) {
-   let sum;
+ function countPositivesSumNegatives(input) {
+    let negSum;
+    let posSum;
+    let newArr =[];
 
-   // if there's nothing in the array, set sum to 0 and return it
-  if (arr.length === 0) {
-    sum = 0;
-    return sum;
-  }
+    input.forEach(e => {
+        if (e % 2 === 0) {
+            posSum += e;
+        } else {
+            negSum +=e;
+        }
+    });
 
-  //loop through each element and add it to sum if it's > than 0. return sum
-  arr.forEach(e => {
-    if (e > 0) {
-      sum = sum + e;
-    }
-    return sum;
-  });
-  
+    newArr.push(posSum, negSum);
+    return newArr;
 }
 
-
-console.log(positiveSum([]));
-console.log(positiveSum([1,-4,7,12])); //1 + 7 + 12 = 20
+console.log(countPositivesSumNegatives([]));
+console.log(countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15])) // [10, -65].
