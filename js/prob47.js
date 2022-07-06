@@ -1,16 +1,11 @@
 /**
- * 7ku - Descending Order
- * TODO: make a function that can take any non-negative integer as an argument and return it with its digits in descending order.
- * *Essentially, rearrange the digits to create the highest possible number.
+ * 8ku - Volume of a Cuboid
+ * Bob needs a fast way to calculate the volume of a cuboid with three values: the length, width and height of the cuboid.
+ * TODO: Write a function to help Bob with this calculation.
  */
 
- function descendingOrder(n){
-  
+ class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    return length * width * height;
+  }
 }
-
- //Examples:
-// Input: 42145 Output: 54421
- 
- //Input: 145263 Output: 654321
- 
- //Input: 123456789 Output: 987654321
